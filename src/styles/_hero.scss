@@ -1,11 +1,13 @@
 @use 'variaveis';
 
 .hero {
-    padding: 5.6vw;
-    min-height: 80vh;
-    background-image: url(../images/060770b6a9b5a9805ed8706ac225cd3d.jpeg);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: url(../../dist/css/060770b6a9b5a9805ed8706ac225cd3d.jpeg);
     text-align: center;
     background-size: cover;
+    background-position: center;
 
     &__content {
         max-width: 640px;
@@ -37,21 +39,13 @@
 
                 img {
                     max-height: 90px;
+                    border-radius: 8px;
                 }
+        }
 
-                button {
-                    display: block;
-                    width: 100%;
-                    height: 60px;
-                    font-size: 18px;
-                    color: variaveis.$corTextoSecundaria;
-                    background-color: #23134d;
-                    text-transform: uppercase;
-                    border-radius: 4px;
-                    margin-top: 2vw;
-                    margin-bottom: 8px;
-                }
-            }
+        .button {
+            border-radius: 8px;
         }
     }
+}
 }

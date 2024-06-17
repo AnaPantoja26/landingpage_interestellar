@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
     <section class="hero">
         <div class="hero__content">
-            <h1 class="hero__content__branding">
-                <img src="./dist/css/Interstellar.jpg" alt="Interstellar">
+            <h1 class="titulo">
+                INTERESTELLAR
             </h1>
             <h3 class="title--small">
-                O melhor filme de ficção científica.
+                O melhor filme de ficção científica do século
             </h3>
             <p>
                 <a href="#" class="link-text">ASSISTA O TRAILER AQUI</a>
@@ -22,24 +25,29 @@
             <ul class="hero__content__plataformas">
                 <li class="hero__content__plataformas__plataforma">
                     <img src="./src/images/download (1).jfif" alt="Prime Video">
-                    <button>Assine Prime Video</button>
+                    <button class="button">Assine Prime Video</button>
                 </li>
                 <li class="hero__content__plataformas__plataforma">
                     <img src="./src/images/TV+.jfif" alt="AppleTV">
-                    <button>Assine AppleTV</button>
+                    <button class="button">Assine AppleTV</button>
                 </li>
                 <li class="hero__content__plataformas__plataforma">
                     <img src="./src/images/What Max Launch Means for Existing HBO Max Customers.jfif" alt="HBO Max">
-                    <button>Assine HBOMax</button>
+                    <button class="button">Assine HBOMax</button>
                 </li>
             </ul>
             <p class="text--small">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                *Consulte cada oferta disponível e seus preços conforme o plano escolhido.
             </p>
         </div>
     </section>
     <section class="shows">
-        <ul class="shows__list">
+        <nav class="shows__tabs">
+            <button data-tab-button="prime" class="shows__tabs__button shows__tabs__button--is-active">Prime Videos</button>
+            <button data-tab-button="apple" class="shows__tabs__button">Apple Tv</button>
+            <button data-tab-button="hbo" class="shows__tabs__button">HBO Max</button>
+        </nav>
+        <ul data-tab-id="prime" class="shows__list shows__list--is-active">
             <li class="shows__list__item">
                 <img src="./src/images/b1f5f025-3c1b-4ca2-9f44-af0551825390.jfif" alt="Them Prime">
             </li>
@@ -50,5 +58,60 @@
                 <img src="./src/images/The Voyeurs (2021).jfif" alt="The Voyeurs Prime">
             </li>
         </ul>
+        <ul data-tab-id="apple" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./src/images/Echo 3 A Good Action  Series To Watch_.jfif" alt="Echo 3">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/156de6be-4dca-4fa3-afe3-89c7480a4391.jfif" alt="SEE">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/New poster for the new Apple TV and M_ Night Shyamalan series SERVANT_.jfif" alt="Servant">
+            </li>
+        </ul>
+        <ul data-tab-id="hbo" class="shows__list">
+            <li class="shows__list__item">
+                <img src="./src/images/62bfd6bd-f7bd-4d9a-b324-1385be12efcf.jfif" alt="The Last of us">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/e6e360a5-9ecf-49b7-a046-88512f28b5d3.jfif" alt="Chernobyl">
+            </li>
+            <li class="shows__list__item">
+                <img src="./src/images/fcb30a8a-8155-4be5-b6c6-e100d777a928.jfif" alt="Game of Thrones">
+            </li>
+        </ul>
     </section>
+    <section class="curio">
+        <h2 class="title--small">
+            Curiosidades sobre Interestellar
+        </h2>
+        <ul class="curio__list">
+            <li class="curio__list__item">
+                <img src="./dist/css/image.webp" alt="Curiosidade 1">
+                <h3 class="title--small">Direção</h3>
+                <p class="text">
+                    A primeira opção para dirigir o filme era Steven Spielberg, que acabou recusando e indicando Jonathan Nolan. Já Jonathan preferiu passar para seu irmão, Christopher Nolan, que acabou sendo o diretor da produção.
+                </p>
+                <button class="button__sec">Saiba mais</button>
+            </li>
+            <li class="curio__list__item">
+                <img src="./dist/css/image (1).webp" alt="Curiosidade 2">
+                <h3 class="title--small">Custo</h3>
+                <p class="text">
+                    O custo do filme foi de 165 milhões de dólares no total, cerca de 976,3 mil dólares por minuto, já que a produção tem 169 minutos. Mas, em compensação, a arrecadação do filme foi de cerca de 675 milhões de dólares.
+                </p>
+                <button class="button__sec">Saiba mais</button>
+            </li>
+            <li class="curio__list__item">
+                <img src="./dist/css/image (2).webp" alt="Curiosidade 3">
+                <h3 class="title--small">Robôs</h3>
+                <p class="text">
+                    Grande parte das cenas de TARS e CASE não foram feitas em computadores. Eles eram controlados e dublados por pessoas reais, que depois eram removidos digitalmente.
+                </p>
+                <button class="button__sec">Saiba mais</button>
+            </li>
+        </ul>
+    </section>
+    <script src="./src/main.js"></script>
+</body>
 </html>

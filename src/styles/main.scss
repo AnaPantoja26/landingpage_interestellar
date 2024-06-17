@@ -1,6 +1,7 @@
 @use 'variaveis';
 @use 'hero';
 @use 'shows';
+@use 'curio';
 
 @font-face {
     font-family: Avenir;
@@ -18,11 +19,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Avenir, sans-serif;
+}
+
+.titulo {
+    font-family: Libre Baskerville, sans-serif;
+    color: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 30px;
+    font-size: 80px;
 }
 
 body {
     background-color: variaveis.$corDeFundo;
-    font-family: Avenir, sans-serif;
 }
 
 @mixin text($fontSize: 16px) {
@@ -64,4 +74,31 @@ body {
 
 .title--small {
     @include title(28px);
+}
+
+.button {
+        display: block;
+        width: 100%;
+        height: 60px;
+        font-size: 18px;
+        color: variaveis.$corTextoSecundaria;
+        background-color: #23134d;
+        text-transform: uppercase;
+        border-radius: 4px;
+        margin-top: 2vw;
+        margin-bottom: 8px;
+
+        &__sec {
+        display: block;
+        width: 100%;
+        height: 60px;
+        font-size: 18px;
+        color: variaveis.$corTextoSecundaria;
+        background-color: #23134d;
+        text-transform: uppercase;
+        border-radius: 4px;
+        margin-top: 2vw;
+        margin-bottom: 8px;
+
+        }
 }
