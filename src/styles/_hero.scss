@@ -9,6 +9,17 @@
     background-size: cover;
     background-position: center;
 
+    .titulo {
+        @media (max-width: 768px) {
+            font-size: 45px; 
+        }
+    }
+
+    .button {
+        margin-top: 2vw;
+        margin-bottom: 8px;
+    }
+
     &__content {
         max-width: 640px;
 
@@ -20,6 +31,11 @@
 
         .title--small {
             margin-bottom: 64px;
+
+            @media (max-width: 768px) {
+                font-size: 18px;
+                
+            }
         }
 
         p {

@@ -11,6 +11,20 @@
         justify-content: space-around;
         text-align: center;
 
+        @media (min-width: 768px) and (max-width: 1024px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            padding: 10vw;
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+        }
+
         &__item {
             text-align: center;
             padding: 60px 0 44px;

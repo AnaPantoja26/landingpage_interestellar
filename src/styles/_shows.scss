@@ -9,6 +9,13 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 24px;
 
+        @media (max-width: 768px) {
+            display: none;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            max-width: 100%;
+        }
+
         &--is-active {
             display: grid;
         }
